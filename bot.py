@@ -65,7 +65,7 @@ async def BotzHub():
 
                 snt = await user_bot.send_message(bot, "/start")
 
-                await asyncio.sleep(10)
+                await asyncio.sleep(7200)
 
                 history = await user_bot(GetHistoryRequest(
 
