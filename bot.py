@@ -57,11 +57,11 @@ async def BotzHub():
 
             c = 0
 
-            edit_text = "**@BotzHub Bots Stats.**\n\n"
+            edit_text = "**@RevyChk Bots Stats.**\n\n"
 
             for bot in bots:
 
-                print(f"[INFO] checking @{bot}")
+                print(f"[INFO] checking {bot}")
 
                 snt = await user_bot.send_message(bot, "/start")
 
@@ -91,13 +91,13 @@ async def BotzHub():
 
                 if snt.id == msg:
 
-                    print(f"@{bot} is down.")
+                    print(f"{bot} is down.")
 
-                    edit_text += f"@{bot} - ❌\n"
+                    edit_text += f"{bot} - ❌\n"
 
                 elif snt.id + 1 == msg:
 
-                    edit_text += f"@{bot} - ✅\n"
+                    edit_text += f"{bot} - ✅\n"
 
                 await user_bot.send_read_acknowledge(bot)
 
